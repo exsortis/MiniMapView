@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		5B45A209185D0F59009D9252 /* libMMVMiniMapView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMVMiniMapView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B45A20C185D0F59009D9252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5B45A210185D0F59009D9252 /* MMVMiniMapView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMVMiniMapView-Prefix.pch"; sourceTree = "<group>"; };
 		5B45A211185D0F59009D9252 /* MMVMiniMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMVMiniMapView.h; sourceTree = "<group>"; };
 		5B45A213185D0F59009D9252 /* MMVMiniMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMVMiniMapView.m; sourceTree = "<group>"; };
 		5B45A219185D0F59009D9252 /* MMVMiniMapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMVMiniMapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,17 +111,8 @@
 			children = (
 				5B45A211185D0F59009D9252 /* MMVMiniMapView.h */,
 				5B45A213185D0F59009D9252 /* MMVMiniMapView.m */,
-				5B45A20F185D0F59009D9252 /* Supporting Files */,
 			);
 			path = MMVMiniMapView;
-			sourceTree = "<group>";
-		};
-		5B45A20F185D0F59009D9252 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B45A210185D0F59009D9252 /* MMVMiniMapView-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5B45A222185D0F59009D9252 /* MMVMiniMapViewTests */ = {
@@ -332,8 +322,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/MMVMiniMapView.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMVMiniMapView/MMVMiniMapView-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -344,8 +334,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/MMVMiniMapView.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMVMiniMapView/MMVMiniMapView-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
